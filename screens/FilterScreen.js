@@ -67,7 +67,7 @@ const styles = StyleSheet.create({
   container: { flex: 1, padding: 16, backgroundColor: '#fff' },
   header: { flexDirection: 'row', alignItems: 'center',top: 30 },
   title: { fontSize: 18, fontWeight: 'bold', marginLeft: 10,left:140 },
-  sectionTitle: { fontSize: 5050, fontWeight: 'bold', marginVertical: 10 },
+  sectionTitle: { fontSize: 50, fontWeight: 'bold', marginVertical: 10 },
   option: { flexDirection: 'row', alignItems: 'center', marginBottom: 10 },
   optionText: { marginLeft: 10, fontSize: 15 },
   applyButton: {
