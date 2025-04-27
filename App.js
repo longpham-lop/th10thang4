@@ -14,6 +14,8 @@ import BeverageScreen from "./screens/Beverages";
 import ExploreScreen from "./screens/Explore";
 import ProductDetail from "./screens/ProductDetail";
 import FilterScreen from "./screens/FilterScreen";
+import FavouriteScreen from "./screens/FavouriteScreen"; 
+import CartScreen from "./screens/CartScreen";  
 
 
 const Stack = createStackNavigator();
@@ -35,6 +37,9 @@ export default function App() {
         <Stack.Screen name="Explore" component={ExploreScreen} />
         <Stack.Screen name="ProductDetail" component={ProductDetail} />
         <Stack.Screen name="FilterScreen" component={FilterScreen} />
+        <Stack.Screen name="FavouriteScreen" component={FavouriteScreen} />
+        <Stack.Screen name="CartScreen" component={CartScreen} />
+
       </Stack.Navigator>
     </NavigationContainer>
   );

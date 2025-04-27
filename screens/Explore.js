@@ -34,6 +34,19 @@ export default function ExploreScreen({ navigation }) {
 
   return (
     <ScrollView style={styles.container}>
+            <TouchableOpacity
+        onPress={() => {
+          if (navigation.canGoBack()) {
+            navigation.goBack();
+          } else {
+            navigation.navigate('Home'); 
+          }
+        }}
+        style={styles.backButton}
+      >
+        <Ionicons name="arrow-back" size={24} color="black" />
+</TouchableOpacity>
+
       <Text style={styles.title}>Find Products</Text>
 
       {/* Search Bar */}
@@ -136,7 +149,7 @@ const styles = StyleSheet.create({
   subTitle: {
     fontSize: 20,
     fontWeight: '600',
-    marginVertical: 10,
+    marginVertical: 20,
   },
   searchBar: {
     flex: 1,
@@ -239,4 +252,15 @@ const styles = StyleSheet.create({
     marginTop: 40,
     marginBottom: 16,
   },
+  headerContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginTop: 40,
+    marginBottom: 20,
+  },
+  backButton: {
+    marginRight: 16,
+    top: 770,
+  },
+  
 });
